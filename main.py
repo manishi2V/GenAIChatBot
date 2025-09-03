@@ -42,3 +42,8 @@ def chat():
         print("Chatbot:", response)
 
 chat()
+
+# As using a large model and may run out of memory,so free up GPU memory. 
+del model
+del tokenizer
+torch.cuda.empty_cache()
