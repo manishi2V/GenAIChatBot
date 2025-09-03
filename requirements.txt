@@ -1,0 +1,3 @@
+Python 3.8 or higher
+pip (Python package manager)
+[transformers library](https://huggingface.co/docs/transformers/index)
