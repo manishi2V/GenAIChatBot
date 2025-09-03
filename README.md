@@ -1,6 +1,28 @@
 # GenAIChatBot
 
-GenAIChatBot is a simple AI-powered chatbot built in Python, utilizing Hugging Face's Transformers library. It uses the GPT-2 language model (`GPT2LMHeadModel`) and tokenizer (`GPT2Tokenizer`) to generate conversational responses, demonstrating the basics of creating a chatbot with generative AI.
+GenAIChatBot is a simple AI-powered chatbot built in Python using Hugging Face’s Transformers library. It leverages the GPT-2 language model (`GPT2LMHeadModel`) and tokenizer (`GPT2Tokenizer`) to generate conversational responses — a practical demonstration of creating a chatbot with generative AI.
+
+---
+
+## 🛠️ Chatbot Development Flow
+
+**STEP 1: Initialize Project**  
+- **Description:** Set up Colab and import libraries  
+- **Tools used:** Google Colab, Hugging Face  
+
+**STEP 2: Load Model**  
+- **Description:** Utilize Transformers to load GPT-2 model  
+- **Tools used:** Hugging Face Transformers  
+
+**STEP 3: Tokenize Input**  
+- **Description:** Prepare user input for the model  
+- **Tools used:** Hugging Face Transformers  
+
+**STEP 4: Generate Response**  
+- **Description:** Model predicts and generates a response  
+- **Tools used:** GPT-2 via PyTorch  
+
+---
 
 ## Features
 
@@ -37,7 +59,7 @@ Here's an example of how to use `GPT2LMHeadModel` and `GPT2Tokenizer` for a basi
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 # Load pre-trained model and tokenizer
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2") # instead of gpt2, "gpt2-medium", "gpt2-large" can also be used
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 model = GPT2LMHeadModel.from_pretrained("gpt2")
 
 def chat():
